@@ -8,18 +8,18 @@
 Summary:	Text::CSV::Encoded - Encoding aware Text::CSV.
 #Summary(pl.UTF-8):	
 Name:		perl-Text-CSV-Encoded
-Version:	0.07
+Version:	0.09
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Text/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	bf1d06ad3093d6a30246e86caa805762
+# Source0-md5:	9e816da38c1f010d7d14058a25b365a3
 URL:		http://search.cpan.org/dist/Text-CSV-Encoded/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(Text::CSV) >= 1.06
+BuildRequires:	perl(Text::CSV) >= 1.12
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
